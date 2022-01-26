@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--Also could have loaded it in relative way which is ./css/styles.css, but since we already mentioned our parent path as the public folder in app.js so we can use this path starting straightaway with /. By default the parent path is the hard drive -->
+        <title>Weather</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css"> 
+        
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Use this site to get your weather! </p>     
+
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+        {{>footer}}
+        <script src="/js/app.js"></script>
+    </body>
+</html>
